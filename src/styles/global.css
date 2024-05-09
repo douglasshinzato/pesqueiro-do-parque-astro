@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Kalam";
+  font-weight: 400;
+  font-style: normal;
+  src: url("font/Kalam-Regular.woff2");
+}
+
+@font-face {
+  font-family: "Kalam";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/font/Kalam-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  src: url("/font/Inter-SemiBold.woff2");
+}
