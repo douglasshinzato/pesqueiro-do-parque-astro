@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets"
+---
+
+<section id="hero" class="relative bg-black">
+  <div
+    class="absolute inset-0 bg-cover bg-center"
+    style="background-image: url('./hero-background.jpeg'); opacity: 0.5;"
+  >
+  </div>
+  <div
+    class="relative z-10 flex flex-col items-center justify-center h-[88vh] text-white text-center px-6"
+  >
+    <span class="text-xl sm:text-2xl font-kalam animate-fadeInDown pb-2"
+      >Bem vindo(a) ao</span
+    >
+    <h1 class="text-2xl sm:text-6xl font-bold font-kalam animate-fadeInDown">
+      Pesqueiro do Parque
+    </h1>
+    <Image
+      class="absolute -bottom-24 z-90 animate-fadeInDown"
+      width={200}
+      height={200}
+      src="/logo.svg"
+      alt="Logo do Pesqueiro do Parque"
+    />
+  </div>
+</section>

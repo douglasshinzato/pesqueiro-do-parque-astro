@@ -1,0 +1,103 @@
+---
+import { Image } from "astro:assets"
+---
+
+<section id="gallery" class="bg-[#bebebe]">
+  <div
+    class="hidden md:flex flex-wrap align-middle justify-center gap-2 px-6 py-12"
+  >
+    <!-- grid grid-cols-2 md:grid-cols-3 -->
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/01.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/02.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/03.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/04.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/05.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/06.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/07.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/08.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+    <div class="max-w-80">
+      <Image
+        class="h-auto max-w-full rounded-lg"
+        src="/09.jpeg"
+        alt=""
+        width={900}
+        height={900}
+      />
+    </div>
+  </div>
+  <div class="relative bg-black md:hidden">
+    <div
+      class="absolute inset-0 bg-cover bg-center"
+      style="background-image: url('./02.jpeg'); opacity: 0.5;"
+    >
+    </div>
+    <div
+      class="relative z-10 flex flex-col items-center justify-center h-[88vh] text-white text-center px-6"
+    >
+    </div>
+  </div>
+</section>

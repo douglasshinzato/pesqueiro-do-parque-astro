@@ -1,0 +1,67 @@
+---
+import { Image } from "astro:assets"
+---
+
+<section
+  class="relative bg-[#06a9b6] flex flex-col items-center justify-center gap-8 text-black px-6"
+>
+  <h2 class="text-4xl sm:text-5xl font-bold font-kalam z-10 pt-36">
+    Pesca Esportiva
+  </h2>
+  <p class="text-md text-center max-w-lg font-semibold z-10 pb-16">
+    Traga sua família e amigos(as) e venham desfrutar de momentos inesqueciveis
+    que só a pesca esportiva pode proporcionar!
+  </p>
+  <div
+    class="flex flex-wrap align-middle justify-center text-md font-semibold gap-8 z-10 pb-60"
+  >
+    <div class="max-w-sm text-center h-full">
+      <Image
+        src="/water.svg"
+        alt=""
+        width={50}
+        height={50}
+        class="mx-auto pb-8"
+      />
+      <p>
+        Nosso lago possui 6.000 m² onde é praticada a pesca esportiva (pesque e
+        solte), proporcionando um ambiente amplo e em contato com a natureza.
+      </p>
+    </div>
+    <div class="max-w-sm text-center h-full">
+      <Image
+        src="/fish.svg"
+        alt=""
+        width={50}
+        height={50}
+        class="mx-auto pb-8"
+      />
+
+      <p>
+        Dispomos de espécies variadas de peixes que podem proporcionar de uma
+        pescaria tranquila até desafiadora com exemplares de até 29kg.
+      </p>
+    </div>
+    <div class="max-w-sm text-center h-full">
+      <Image
+        src="/utensils.svg"
+        alt=""
+        width={50}
+        height={50}
+        class="mx-auto pb-8"
+      />
+
+      <p>
+        Servimos porções, bebidas, água e refrigente. Tudo para proporcionar o
+        maior conforto para você e sua família!
+      </p>
+    </div>
+  </div>
+  <Image
+    class="absolute bottom-0 w-screen"
+    src="/shape.svg"
+    alt=""
+    width={300}
+    height={300}
+  />
+</section>
