@@ -1,11 +1,23 @@
 @layer base {
   @font-face {
     font-family: "Kalam";
-    src: url("/public/font/Kalam-Regular.woff2") format("woff2"),
-      url("/public/font/Kalam-Bold.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    src: url("/public/font/Kalam-Regular.woff2");
   }
+
+  @font-face {
+    font-family: "Kalam";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/public/font/Kalam-Bold.woff2") format("woff2");
+  }
+
   @font-face {
     font-family: "Inter";
-    src: url("/public/font/Inter-VariableFont_slnt,wght.ttf");
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    src: url("/public/font/Inter-SemiBold.woff2");
   }
 }
