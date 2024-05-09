@@ -1,5 +1,26 @@
 ---
 import { Image } from "astro:assets"
+import firstImage from "../assets/01.webp"
+import secondImage from "../assets/02.webp"
+import thirdImage from "../assets/03.webp"
+import fourthImage from "../assets/04.webp"
+import fifthImage from "../assets/05.webp"
+import sixthImage from "../assets/06.webp"
+import seventhImage from "../assets/07.webp"
+import eighthImage from "../assets/08.webp"
+import ninthImage from "../assets/09.webp"
+
+const images = [
+  firstImage,
+  secondImage,
+  thirdImage,
+  fourthImage,
+  fifthImage,
+  sixthImage,
+  seventhImage,
+  eighthImage,
+  ninthImage,
+]
 ---
 
 <section id="gallery" class="bg-[#bebebe]">
@@ -7,92 +28,18 @@ import { Image } from "astro:assets"
     class="hidden md:flex flex-wrap align-middle justify-center gap-2 px-6 py-12"
   >
     <!-- grid grid-cols-2 md:grid-cols-3 -->
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/01.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/02.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/03.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/04.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/05.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/06.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/07.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/08.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
-    <div class="max-w-80">
-      <Image
-        class="h-auto max-w-full rounded-lg"
-        src="/09.webp"
-        alt=""
-        width={900}
-        height={900}
-      />
-    </div>
+    {
+      images.map((image) => (
+        <div class="max-w-80">
+          <Image class="h-auto max-w-full rounded-lg" src={image} alt="" />
+        </div>
+      ))
+    }
   </div>
   <div class="relative bg-black md:hidden">
     <div
       class="absolute inset-0 bg-cover bg-center"
-      style="background-image: url('./02.webp'); opacity: 0.5;"
+      style="background-image: url('/src/assets/02.webp'); opacity: 0.5;"
     >
     </div>
     <div

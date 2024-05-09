@@ -1,11 +1,12 @@
 ---
 import { Image } from "astro:assets"
+import logo from "../assets/logo.webp"
 ---
 
 <section id="hero" class="relative bg-black">
   <div
     class="absolute inset-0 bg-cover bg-center"
-    style="background-image: url('./hero-background.webp'); opacity: 0.5;"
+    style="background-image: url('/src/assets/hero-background.webp'); opacity: 0.5;"
   >
   </div>
   <div
@@ -19,9 +20,9 @@ import { Image } from "astro:assets"
     </h1>
     <Image
       class="absolute -bottom-24 z-90 animate-fadeInDown"
-      width={200}
-      height={200}
-      src="/logo.webp"
+      src={logo}
+      width="200"
+      height="200"
       alt="Logo do Pesqueiro do Parque"
     />
   </div>
