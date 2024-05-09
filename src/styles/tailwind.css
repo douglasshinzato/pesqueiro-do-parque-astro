@@ -1,0 +1,11 @@
+@layer base {
+  @font-face {
+    font-family: "Kalam";
+    src: url(/public/font/Kalam-Regular.ttf), url(/public/font/Kalam-Bold.ttf),
+      url(/public/font/Kalam-Light.ttf);
+  }
+  @font-face {
+    font-family: "Inter";
+    src: url(/public/font/Inter-VariableFont_slnt\,wght.ttf);
+  }
+}
