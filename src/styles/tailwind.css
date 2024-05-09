@@ -1,8 +1,8 @@
 @layer base {
   @font-face {
     font-family: "Kalam";
-    src: url(/public/font/Kalam-Regular.ttf), url(/public/font/Kalam-Bold.ttf),
-      url(/public/font/Kalam-Light.ttf);
+    src: url(/public/font/Kalam-Regular.woff2) format(woff2),
+      url(/public/font/Kalam-Bold.woff2) format(woff2);
   }
   @font-face {
     font-family: "Inter";
