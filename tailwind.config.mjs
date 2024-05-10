@@ -22,9 +22,9 @@ export default {
         kalam: ["Kalam", "cursive"],
       },
       backgroundImage: {
-        "hero-background": "url('/src/assets/hero-background.webp')",
-        "footer-background": "url('/src/assets/footer-background.webp')",
-        "gallery-background": "url('/src/assets/gallery-background.webp')",
+        "hero-background": "url('/hero-background.webp')",
+        "footer-background": "url('/footer-background.webp')",
+        "gallery-background": "url('/gallery-background.webp')",
       },
     },
   },
