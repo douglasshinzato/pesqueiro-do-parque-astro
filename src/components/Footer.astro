@@ -1,0 +1,62 @@
+---
+import { Icon } from "astro-icon/components"
+---
+
+<section id="hero" class="relative bg-[#502d00]">
+  <div
+    class="absolute inset-0 bg-cover bg-center bg-footer-background opacity-50"
+  >
+  </div>
+  <div
+    class="relative z-10 flex flex-wrap md:flex-nowrap items-center justify-center px-6 h-[88vh] gap-8"
+  >
+    <div
+      class="relative z-10 flex flex-col items-center md:items-start justify-center text-white [text-shadow:_0_2px_0px_rgb(0_0_0_/_40%)]"
+    >
+      <span class="text-xl sm:text-2xl font-kalam pb-2">No coração de</span>
+      <h3 class="text-4xl sm:text-6xl font-bold font-kalam pb-2">
+        Campo Grande!
+      </h3>
+      <p
+        class="text-md max-w-lg font-semibold z-10 pb-4 text-center md:text-start"
+      >
+        Estamos localizados na Av. Hiroshima, nº 261 - Bairro Carandá Bosque,
+        próximo ao Parque dos Poderes.
+      </p>
+      <div class="flex flex-col gap-1 font-semibold">
+        <a href="http://" class="flex">
+          <Icon class="mr-2 my-auto" name="whatsapp" size={22} />
+          (67) 99125-5143
+        </a>
+        <a href="http://" class="flex">
+          <Icon class="mr-2 my-auto" name="instagram" size={22} />
+          @pesqueiro_do_parque
+        </a>
+      </div>
+    </div>
+    <iframe
+      class="hidden md:block"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14954.01033160248!2d-54.5654307!3d-20.4445409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e91d60fca02d%3A0x52cbc067908414cb!2sPesqueiro%20do%20Parque%20-%20Pesque%20e%20Pague%20%7C%20Pesca%7C%20Peixe%20Assado%20%7C%20Por%C3%A7%C3%B5es%20%7C%20Lazer!5e0!3m2!1spt-BR!2sbr!4v1715363867005!5m2!1spt-BR!2sbr"
+      width="600"
+      height="450"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+      class="md:hidden"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14954.01033160248!2d-54.5654307!3d-20.4445409!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e91d60fca02d%3A0x52cbc067908414cb!2sPesqueiro%20do%20Parque%20-%20Pesque%20e%20Pague%20%7C%20Pesca%7C%20Peixe%20Assado%20%7C%20Por%C3%A7%C3%B5es%20%7C%20Lazer!5e0!3m2!1spt-BR!2sbr!4v1715363888282!5m2!1spt-BR!2sbr"
+      width="300"
+      height="400"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <span class="absolute bottom-4 text-white"
+      >Desenvolvido por <a
+        href="https://shinzato-dev.vercel.app/"
+        target="_blank">shinzato.dev</a
+      >
+    </span>
+  </div>
+</section>
