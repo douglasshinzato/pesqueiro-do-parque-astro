@@ -1,16 +1,19 @@
 ---
 import { Image } from "astro:assets"
+import { Icon } from "astro-icon/components"
+import shape from "../assets/shape.svg"
+
 const features = [
   {
-    icon: "/src/assets/water.svg",
+    icon: "water",
     text: "Nosso lago possui 6.000 m² onde é praticada a pesca esportiva pesque e solte, proporcionando um ambiente amplo e em contato com a natureza.",
   },
   {
-    icon: "/src/assets/fish.svg",
+    icon: "fish",
     text: "Dispomos de espécies variadas de peixes que podem proporcionar de uma pescaria tranquila até desafiadora com exemplares de até 29kg.",
   },
   {
-    icon: "/src/assets/utensils.svg",
+    icon: "utensils",
     text: "Servimos porções, bebidas, água e refrigente. Tudo para proporcionar o maior conforto para você e sua família!",
   },
 ]
@@ -32,16 +35,17 @@ const features = [
     {
       features.map((feature) => (
         <div class="max-w-sm text-center h-full">
-          <Image
-            src={feature.icon}
-            alt=""
-            width={50}
-            height={50}
-            class="mx-auto pb-8"
-          />
+          <Icon class="text-black mx-auto mb-8" name={feature.icon} size={50} />
           <p> {feature.text}</p>
         </div>
       ))
     }
   </div>
+  <Image
+    class="absolute bottom-0 w-screen"
+    src={shape}
+    alt=""
+    width={300}
+    height={300}
+  />
 </section>

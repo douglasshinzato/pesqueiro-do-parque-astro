@@ -21,6 +21,11 @@ export default {
         inter: ["Inter", "sans-serif"],
         kalam: ["Kalam", "cursive"],
       },
+      backgroundImage: {
+        "hero-background": "url('/src/assets/hero-background.webp')",
+        "footer-background": "url('/src/assets/footer-background.webp')",
+        "gallery-background": "url('/src/assets/02.webp')",
+      },
     },
   },
   plugins: [],
