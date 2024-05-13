@@ -9,7 +9,7 @@ export default {
       },
       keyframes: {
         fadeInDown: {
-          "0%": { opacity: 0, transform: "translateY(-100%)" },
+          "0%": { opacity: 0, transform: "translateY(-20%)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
         fadeInUp: {
@@ -18,9 +18,8 @@ export default {
         },
       },
       fontFamily: {
-        inter: ["Inter", "sans-serif"],
-        kalam: ["Kalam", "cursive"],
         bristain: ["Bristain-Rought", "sans-serif"],
+        dmSerif: ["DMSerifText-Regular", "sans-serif"],
       },
       backgroundImage: {
         "hero-background": "url('/hero-background.webp')",

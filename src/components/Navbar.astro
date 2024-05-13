@@ -1,4 +1,4 @@
-<header class="fixed w-screen py-4 px-8 z-20 bg-black/50 backdrop-blur-sm">
+<!-- <header class="fixed w-screen py-4 px-8 z-20 bg-black/50 backdrop-blur-sm">
   <nav
     class="hidden md:flex lg:flex-row items-center justify-center max-w-screen-xl mx-auto"
   >
@@ -11,4 +11,30 @@
   <button id="menu-button" class="md:hidden text-white font-bristain uppercase"
     >Menu</button
   >
+</header> -->
+<header
+  class="fixed w-screen py-4 px-8 z-20 bg-black/50 backdrop-blur-sm animate-fadeInDown"
+>
+  <nav class="flex flex-col">
+    <button
+      id="menu-button"
+      class="md:hidden text-white font-bristain uppercase">Menu</button
+    >
+    <ul
+      class="hidden pt-4 md:pt-0 md:flex flex-col md:flex-row justify-center align-middle gap-1 md:gap-8 text-white text-center font-bristain uppercase"
+    >
+      <li><a href="#hero">Inicio</a></li>
+      <li><a href="#gallery">Galeria</a></li>
+      <li><a href="#footer">Localização</a></li>
+    </ul>
+  </nav>
 </header>
+
+<script>
+  const menuButton = document.querySelector("#menu-button")
+  const navList = document.querySelector("nav ul")
+
+  menuButton.addEventListener("click", () => {
+    navList.classList.toggle("hidden")
+  })
+</script>
