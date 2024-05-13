@@ -3,10 +3,12 @@
   src: url("/fonts/Bristain-Rought.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: "DMSerifText-Regular";
   src: url("/fonts/DMSerifText-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
