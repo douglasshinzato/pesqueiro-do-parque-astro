@@ -20,6 +20,7 @@ export default {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         kalam: ["Kalam", "cursive"],
+        bristain: ["Bristain-Rought", "sans-serif"],
       },
       backgroundImage: {
         "hero-background": "url('/hero-background.webp')",
