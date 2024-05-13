@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets"
 import logo from "../../public/logo.webp"
 ---
 
@@ -17,11 +16,11 @@ import logo from "../../public/logo.webp"
     <h1 class="text-2xl sm:text-6xl font-bold font-kalam animate-fadeInDown">
       Pesqueiro do Parque
     </h1>
-    <Image
+    <img
       class="absolute -bottom-24 z-90 animate-fadeInDown"
-      src={logo}
-      width={300}
-      height={300}
+      src="/logo.webp"
+      width={200}
+      height={200}
       alt="Logo do Pesqueiro do Parque"
     />
   </div>
